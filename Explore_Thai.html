@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiang Mai Travel</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+ line-height: 1.6;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background: url('https://github.com/codegenweb/ExploreScape-Travel-website/blob/main/img/bac%204.png?raw=true') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 350px 50px;
+}
+/* Add styles for the slideshow */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+#slideshow {
+    display: flex;              /* Use flexbox for centering */
+    justify-content: center;    /* Center horizontally */
+    align-items: center;        /* Center vertically */
+    overflow: hidden;           /* Hide overflow if images are larger */
+    position: relative;         /* Position relative for absolute children */
+    width: 100%;                /* Full width */
+    max-width: 1024px;         /* Optional: Limit max width */
+    margin: 0 auto;            /* Center the slideshow container */
+}
+
+.slide {
+    display: none;              /* Hide slides by default */
+    justify-content: center;    /* Center content within each slide */
+}
+
+.slide img {
+    max-width: 100%;           /* Make images responsive */
+    height: auto;              /* Maintain aspect ratio */
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    text-align: "center ;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.cta-button {
+    background: #FF9800;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery-container img {
+    margin: 10px;
+    width: 250px;
+    height: 130px;
+    object-fit: cover;
+}
+
+footer {
+    background: #333;
+    color: lightpink;
+    padding: 20px;
+    text-align: center;
+}
+
+footer form {
+    margin-bottom: 20px;
+}
+
+footer input {
+    margin: 5px;
+    padding: 10px;
+    width: 200px;
+}
+
+footer button {
+    padding: 10px 15px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+<header>
+        <h1>Welcome to Explore_Thai</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+<section class="hero">
+        <h2>Your Adventure Awaits</h2>
+        <p>Discover the beauty and culture of Northern Thailand.</p><br>
+        <a href="#contact" class="cta-button">Plan Your Trip</a>
+    </section>
+
+    <section id="about">
+        <h2>About Chiang Mai</h2>
+        <p id="about-content">Chiang Mai is known for its stunning temples, vibrant culture, and breathtaking landscapes. Our mission is to help you discover the true essence of Chiang Mai by providing you with detailed insights into the city’s rich history, incredible landscapes, and vibrant community.
+
+From the majestic temples and bustling markets to the tranquil nature spots and adventurous trekking routes, our page is here to showcase all the gems Chiang Mai has to offer. Whether you're a first-time visitor or a returning traveler, we strive to provide useful tips, recommendations, and insider knowledge to make your stay memorable.
+Whether you're looking for adventure or relaxation, Chiang Mai has something for everyone.</p>
+        <button id="toggle-button">Toggle More Info</button>
+    </section>
+    <div id="slideshow">
+        <div class="slide fade">
+            <img src="image1.jpg" alt="Chiang Mai Temple" width="1024 px" height="768 px">
+        </div>
+        <div class="slide fade">
+            <img src="image2.jpg" alt="Chiang Mai Market" width="1024 px" height="768 px">
+        </div>
+        <div class="slide fade">
+            <img src="image3.jpg" alt="Chiang Mai Nature" width="1024 px" height="768 px">
+        </div>
+	<div class="slide fade">
+            <img src="image4.jpg" alt="Chiang Mai Nature" width="1024 px" height="768 px">
+	</div>
+    </div>
+<section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+            <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/0a/75/58/be.jpg">
+            <img src="https://cdn.getyourguide.com/img/tour/0aa5a093cf4fa9fac5ab38f2e6612656ad5193f015ce58ff49c58634150ee6f4.jpeg/98.jpg">
+            <img src="https://live.staticflickr.com/65535/48073194257_a908299d65_b.jpg">
+            <img src="https://foodforthought.com.my/wp-content/uploads/Food-Guide-Chiang-Mai-Street-Food-Title-Cards.jpg">
+        </div>
+    </section>
+<footer id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <button type="submit">Send</button>
+        </form>
+        <p>If you have any questions or need assistance, feel free to reach out!</p>
+        <p>Email: info@chiangmaitravel.com</p>
+        <p>Phone: +91 213 566 489</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
